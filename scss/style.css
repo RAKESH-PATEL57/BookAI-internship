@@ -39,11 +39,21 @@ body {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  width: 78%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
   flex-wrap: wrap;
+  z-index: 1000;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  padding: 1rem;
 }
 
 .logo {
